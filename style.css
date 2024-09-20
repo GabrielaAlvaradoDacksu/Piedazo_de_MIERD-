@@ -7,13 +7,22 @@
     text-decoration: none;
     font-size: 1rem;
     font-weight: 400;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Roboto-Regular','Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     list-style: none;
     box-sizing: border-box;
 }
+
 @font-face {
-    font-family: ;
-    src: url();
+    font-family: mywebsitefont;
+    src: url('/Roboto-Regular.ttf');
+}
+@font-face {
+    font-family: anotherwebfont;
+    src: url('/Roboto-Black.ttf');
+}
+@font-face {
+    font-family: buttonfont;
+    src: url('/Roboto-Bold.ttf');
 }
 
 :root {
@@ -36,8 +45,14 @@
   --logo-large: 56;
 }
 
+header{
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
 header nav{
     display: flex;
+    align-items: center;
     justify-content: space-between;
     padding: 10px 60px;
 }
@@ -48,30 +63,54 @@ nav ul{
 
 nav ul a{
     color: #F2F2F2;
+    font-size: var(--text-base);
 }
 
 nav div{
     display: flex;
-    gap: 12px;
+    gap: 15px;
 }
 
-nav div button{
+button.inicio {
+    background-color: #1D354B;
+    color: #F2F2F2;
+    padding: 12px 12px;
+    border-radius: 10px;
+    font-family: buttonfont;
+}
 
+button.registrarse{
+    background-color: #C14F11;
+    color: #F2F2F2;
+    padding: 12px 12px;
+    border-radius: 10px;
+    font-family: buttonfont;
 }
 
 .jumbotron{
-    background-image: url(/section.jpg);
+    background-image: url('/section.jpg');
     background-size: cover;
     background-position: center;
     padding: 300px 60px;
 }
+
 .jumbotron h1{
-    
+    font-family: anotherwebfont;
+    text-align: center;
+    font-size: 64px;
 }
 
+.cards{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
 body {
-    color: #F2F2F2;
-    background-color: #0E0D1E;
-    
-}
 
+    color: #F2F2F2;
+    background-color: #0E0D1E;   
+}
+.card > img {
+
+    height: 248px;
+}
