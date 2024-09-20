@@ -103,14 +103,21 @@ button.registrarse{
 .cards{
     display: flex;
     align-items: center;
-    flex-direction: column;
 }
-body {
+.card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
 
-    color: #F2F2F2;
-    background-color: #0E0D1E;   
 }
 .card > img {
 
     height: 248px;
+}
+
+body {
+
+    color: #F2F2F2;
+    background-color: #0E0D1E;   
 }
