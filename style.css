@@ -1,7 +1,9 @@
+
 * {
     padding: unset;
     margin: unset;
     border: unset;
+    outline: none;
     text-decoration: none;
     font-size: 1rem;
     font-weight: 400;
@@ -9,13 +11,67 @@
     list-style: none;
     box-sizing: border-box;
 }
+@font-face {
+    font-family: ;
+    src: url();
+}
+
+:root {
+  --margin-page: 60 px;
+  --color-primary: #C14F11;
+  --color-base: #1D354B;
+  --color-secondary: #773621;
+  --color-neutral: #ABB1A5;
+  --color-shadow: #0E0D1E;
+  --color-white: #F2F2F2;
+  --color-dark: #979797;
+  --text-base: 16px;
+  --text-small: 12px;
+  --text-title: 24px;
+  --text-large: 32;
+  --text-jumbo: 64;
+  --border-radius: 10px;
+  --logo-small: 24px;
+  --logo-medium: 32px;
+  --logo-large: 56;
+}
 
 header nav{
     display: flex;
     justify-content: space-between;
+    padding: 10px 60px;
+}
+nav ul{
+    display: flex;
+    gap: 46px;
+}
+
+nav ul a{
+    color: #F2F2F2;
+}
+
+nav div{
+    display: flex;
+    gap: 12px;
+}
+
+nav div button{
+
+}
+
+.jumbotron{
+    background-image: url(/section.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 300px 60px;
+}
+.jumbotron h1{
+    
 }
 
 body {
-    color: #1e1e1e;
+    color: #F2F2F2;
+    background-color: #0E0D1E;
+    
 }
 
