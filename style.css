@@ -101,6 +101,12 @@ button.registrarse{
 }
 
 .cards{
+    margin-bottom: 30px;
+    gap: 10px;
+    padding: 30px 60px;
+}
+
+.cards{
     display: flex;
     align-items: center;
 }
@@ -114,8 +120,50 @@ button.registrarse{
 .card > img {
 
     height: 248px;
+    border-radius: 10px;
 }
 
+.card > button {
+background-color: #C14F11;
+padding: 18px 120px;
+border-radius: 10px;
+font-family: buttonfont;
+color: #F2F2F2;
+margin-top: 10px;
+}
+
+.card h2 {
+    font-size: var(--text-title);
+    font-family: buttonfont;
+    color: #F2F2F2;
+
+}
+
+.card h2 {
+    padding: 10px;
+    
+}
+
+.card p {
+    font-size: var(--text-base);
+    font-family: mywebsitefont;
+    color: #979797;
+    margin-bottom: 10px;
+}
+
+.jumbotronv2 {
+    background-image: url('/jumbotron2.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 300px 60px;
+}
+.jumbotronv2 h2 {
+    font-family: anotherwebfont;
+    font-size: 64px;
+    text-align: end;
+
+
+}
 body {
 
     color: #F2F2F2;
